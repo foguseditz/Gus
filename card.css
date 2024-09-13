@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7EED3
+}
+
+.valentines-day-card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #B99470;
+  overflow: hidden;
+  border:10px solid white;
+  border-radius:10px;
+  box-shadow: 0 0 100px rgba(0,0,0,.4);
+}
+
+.valentines-day-card:before {
+  content:"";
+  position: absolute;
+  background-color: #B99470;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:140px;
+  left:-25px;
+  box-shadow:60px 20px #B99470,130px 10px #B99470, 190px 20px #B99470,260px -5px #B99470, 340px 20px #B99470;
+}
+
+.valentines-day-card:after {
+  content:"";
+  position: absolute;
+  background-color: #EAD8C0;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:160px;
+  left:-40px;
+  box-shadow: 50px 20px #EAD8C0,120px 40px #EAD8C0, 200px 15px #EAD8C0,260px 30px #EAD8C0, 330px 30px #EAD8C0,380px 10px #EAD8C0;
+}
+
+.clouds {
+  position: absolute;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color: #FFF2E1;
+  z-index:5;
+  top:210px;
+  left:-20px;
+  box-shadow: 55px 30px #FFF2E1, 125px 10px #FFF2E1,175px 20px #FFF2E1, 250px 10px #FFF2E1, 320px 5px #FFF2E1, 380px 10px #FFF2E1;
+}
+
+
+
+
+
+
+@keyframes move {
+  0%, 100% {transform: rotateY(0);}
+  50% {transform: rotateY(-45deg);}
+}
+
+
+
+@keyframes up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-250px);}
+}
+
+@keyframes upTwo {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-450px);}
+}
+
+.text {
+  position: absolute;
+  color: #ffffff;
+  font-size:30px;
+  font-family: 'Pacifico', cursive;
+  line-height:1;
+  text-align: center;
+  width:380px;
+  left:5px;
+  z-index:3;
+  top:320px;
+  animation: up 1s ease forwards;
+  transition: .2s;
+}
+
+.hover {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+.text:hover span {
+  display: none;
+}
+
+.text:hover:before {
+  content:"กัสขอโทษงับการ์ดใบนี้กัสตั้งใจทำสู้ดๆเลยพี่กีฟบอกว่าให้ไปหาอะไรทำกัสหาแล้วคั้บยกโทษให้หมาแพนดี้ตัวน้อยๆตัวนี้ด้วยนะงับ";
+  font-size:16px;
+
+}
