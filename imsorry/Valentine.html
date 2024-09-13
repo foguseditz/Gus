@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Valentine's Day Surprise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            background-color: #ffc0cb; /* Light Pink */
+            text-align: center;
+            padding: 50px;
+        }
+
+        .valentine-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #e6005c; /* Reddish Pink */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+
+        .btn-no {
+            transition: transform 0.3s;
+        }
+
+        .btn-yes {
+            transition: transform 0.3s;
+        }
+
+        .btn-no:hover {
+            transform: scale(2);
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="valentine-container">
+        <h1>Happy Valentine's Day!</h1>
+        <img src="your-image-url.jpg" alt="Valentine's Day Image">
+        <p class="message">You make my heart happy. Will you be my Valentine?</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-no" onclick="makeBigger()">No</button>
+            <button type="button" class="btn btn-success btn-yes" onclick="makeSmaller()">Yes</button>
+        </div>
+        <p class="footer">With love, [Your Name]</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function makeBigger() {
+            var btnNo = document.querySelector('.btn-no');
+            btnNo.style.transform = 'scale(2)';
+        }
+
+        function makeSmaller() {
+            var btnYes = document.querySelector('.btn-yes');
+            btnYes.style.transform = 'scale(1.5)';
+        }
+    </script>
+
+</body>
+
+</html>
